@@ -1,6 +1,7 @@
 body {
   font-family: "Inter", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
+  background-color: black;
 }
 
 .attribution {
@@ -8,9 +9,10 @@ body {
   text-align: center;
   position: relative;
   top: 10px;
+  color: aliceblue;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228, 88%, 74%);
 }
 
 .section-wrapper {
@@ -33,7 +35,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: left;
-  padding: 20px;
+  padding: 50px;
   background-color: hsl(244, 38%, 16%);
   color: white;
 }
@@ -92,8 +94,27 @@ p {
   .section-wrapper {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    height: 70%;
+    width: 40vw;
+    height: 70vh;
+    padding: 30px;
+  }
+  .main-heading {
+    font-size: 28px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .numbers-1,
+  .numbers-2,
+  .numbers-3 {
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .word-1,
+  .word-2,
+  .word-3 {
+    font-size: 14px;
   }
 
   .words-section {
@@ -113,6 +134,10 @@ p {
     margin: 0; /* Remove any margins */
     padding: 0;
   }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 @media (max-width: 300px) {
@@ -124,6 +149,7 @@ p {
     justify-content: center;
     align-items: center;
   }
+
   .words-section {
     order: 2;
     max-width: 100%;
